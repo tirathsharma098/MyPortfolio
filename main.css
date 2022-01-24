@@ -1,0 +1,467 @@
+
+/* code to reset CSS Styles */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Code for Header comes here */
+
+header{
+    height: 400px;
+    background-color: #1d3557;
+   display: flex;
+   flex-direction: column;
+}
+
+.mainContainer{
+    flex: 8;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.nameContainer{
+    flex: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profileContainer{
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainContainer .nameContainer h1{
+    color: #98c1d9;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 80px;
+    letter-spacing: 0.1em;
+    line-height: 100px;
+}
+
+header .mainContainer .profileContainer img{
+    height: 300px;
+    width: 240px;
+    border: 2px solid #56ab91;
+    border-radius: 50%;
+}
+
+                        /* Navigation Comes Here */
+
+#mainNav{
+    background-color: #1d3557;
+    position: sticky;
+    top: 0px;
+    transition: transform 1s ease-out;
+}
+
+#mainNavigation{
+    height: 50px;
+    
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(219, 231, 228, 0.1);
+}
+
+#mainNavigation .navContent{
+    flex: 0.6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#mainNavigation .navContent li{
+    flex: 0.15;
+    display: flex;    
+}
+
+#mainNavigation .navContent li a{
+    flex: 1;
+    text-decoration: none;
+    font-size: x-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 0.1em;
+    color: #ffcb69;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mainNavigation .navContent li a:hover{
+    color: #C0D8C0;
+    background-color: rgba(219, 231, 228, 0.1);
+}
+
+                /*  ABOUT SECTION COMES HERE */
+
+#about{
+    display: flex;
+    height: 550px;
+}
+
+#about .aboutHeading{
+    flex: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFDDE;
+}
+
+#about .aboutHeading p{
+    flex: 0.7;
+    height: fit-content;
+    margin: 20px 0;
+    padding: 2.5rem 2rem;
+    border-radius: 50px;
+    font-size: 80px;
+    font-family: 'Balsamiq Sans', cursive;
+    background-color: #59886B;
+    color: #FFF89A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about .aboutContent{
+    flex: 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D9D7F1;
+}
+
+#about .aboutContent .content{
+    padding: 20px 30px;
+    flex: 0.7;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#about .aboutContent .content p{
+    font-size: 28px;
+    font-family: 'Nunito', sans-serif;
+    line-height: 32px;
+    letter-spacing: 0.07em;
+    justify-self: center;
+}
+
+
+/*   Skills Section CSS codes comes here */
+
+#skills{
+    display: flex;
+    height: auto;
+    background-color: #fdf5cf;
+}
+
+#skills .skillsContainer{
+    flex: 6;
+    margin: 40px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#skills .skillsContainer .skillsContent{
+    /* background-color: #9fc7fff1; */
+    padding: 20px 35px;
+    margin: 30px 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#skills .skillsContainer .skillsContent .skillItem{
+    display: flex;
+    flex-direction: column;
+}
+
+#skills .skillsContainer .skillsContent .skillItem .skillsTitle{
+    color: #e76f51;
+    font-family: 'Secular One', sans-serif;
+    font-size: 28px;
+    word-spacing: 0.12em;
+}
+
+#skills .skillsContainer .skillsContent .skillItem .allItem{
+    display: flex;
+    margin: 20px 0;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#skills .skillsContainer .skillsContent .skillItem .allItem>div{
+    padding: 20px 30px;
+}
+
+#skills .skillsContainer .skillsContent .skillItem .allItem .icon{
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+#skills .skillsContainer .skillsContent .skillItem .allItem .icon img{
+    width: 60px;
+    height: 60px;
+}
+
+#skills .skillsContainer .skillsContent .skillItem .allItem .name{
+    font-family: 'Slabo 27px', serif;
+    font-size: 22px;
+    font-weight:600;
+    text-align: center;
+}
+
+#skills .skillsHeading{
+    flex: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFDDE;
+}
+
+#skills .skillsHeading h2{
+    flex: 0.7;
+    height: fit-content;
+    margin: 20px 0;
+    padding: 2.5rem 2rem;
+    border-radius: 50px;
+    font-size: 80px;
+    font-family: 'Balsamiq Sans', cursive;
+    background-color: #59886B;
+    color: #FFF89A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Contact Form Goes here */
+
+#contactForm{
+    display: flex;
+    background-color: #dbe7e4;
+}
+
+#contactForm .formItem{
+    flex: 1;
+}
+
+#contactForm .formItem:first-of-type{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contactForm .formItem:first-of-type p{
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+    font-size: 22px;
+    width: 80%;
+    letter-spacing: 0.07em;
+    line-height: 1.3em;
+    color: #1a535c;
+    font-weight: 500;
+    margin: 50px 0px;
+    text-align: justify;
+}
+
+#contactForm .mainForm{
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border-left: 2px solid white; */
+}
+
+#contactForm .mainForm>div{
+    display: flex;
+    flex-direction: column;
+    background-color: #e3f2fd;
+    padding: 60px 90px;
+    border-radius: 20px;
+}
+
+#contactForm .mainForm .formHeading{
+    padding-bottom: 20px;
+}
+
+#contactForm .mainForm .formHeading h2{
+    font-size: 38px;
+    text-decoration:underline;
+    text-decoration-color: #98c1d9;
+    text-decoration-thickness: 0.054em;
+    font-family: 'Patrick Hand', cursive;
+    color: #013a63;
+}
+
+#contactForm .mainForm>div div{
+    padding: 10px 0;
+    align-self: left;
+    display: flex;
+    flex-direction: column;
+}
+
+#contactForm .mainForm>div div label{
+    padding-bottom: 4px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+
+#contactForm .mainForm>div div input{
+    border: 2px solid #a0cab0;
+    border-radius: 10px;
+    padding-left: 20px;
+    height: 40px;
+}
+
+#contactForm .mainForm>div div textarea{
+    border: 2px solid #a0cab0;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    padding-left: 20px;
+    resize: none;
+}
+
+#contactForm .mainForm>div button{
+    align-self: center;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    color: #1d3557cc;
+    font-family: 'Secular One', sans-serif;
+    border: 2px solid rgba(53, 79, 90, 0.952);
+    border-radius: 30px;
+}
+
+#contactForm .mainForm>div button:hover{
+    box-shadow: 0px 2px 6px 0px #457b9d;
+    color: #1d3557fa;
+}
+
+                /*       Footer comes here          */
+
+footer .upperOne{
+    height: 250px;
+    background-color:#073b4c;
+    display: flex;
+    justify-content: center;
+}
+
+footer .upperOne .contactMe{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .upperOne .contactMe>div:first-child{
+    margin-bottom: 20px;
+    font-size: 38px;
+    font-family: 'Roboto', sans-serif;
+    color: #89b0ae;
+}
+
+footer .upperOne .contactMe .platform{
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .upperOne .contactMe .platform>div img{
+    width: 45px;
+    height: 45px;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.555);
+}
+
+footer .upperOne .contactMe .platform>div img:hover{
+    background-color: #d2e3ec;
+    box-shadow: 0px 2px 6px 0 white;
+}
+
+footer .upperOne .contactMe .email{
+    font-size: 20px;
+    color: #c38f71;
+    text-decoration: none;
+    margin: 20px 0 0 0;
+}
+
+footer .upperOne .contactMe .email a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #89b0ae;
+}
+
+footer .upperOne .contactMe .email a:hover{
+    color: #e24b5f;
+    text-shadow: 0 2px 4px rgb(219, 80, 108);
+}
+
+footer .bottomOne{
+    background-color: rgb(0, 17, 39);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+footer .bottomOne .bottomCopyright{
+    padding: 20px 0;
+}
+
+footer .bottomOne .bottomCopyright>div{
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.06em;
+    word-spacing: 0.1em;
+    color: rgb(209, 209, 209);
+}
