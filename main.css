@@ -1,4 +1,5 @@
 
+
 /* code to reset CSS Styles */
 
 html, body, div, span, applet, object, iframe,
@@ -91,52 +92,46 @@ header .mainContainer .profileContainer img{
     border-radius: 50%;
 }
 
-                        /* Navigation Comes Here */
 
-#mainNav{
+/* Bootstrap changes */
+
+.navbar{
     background-color: #1d3557;
-    position: sticky;
-    top: 0px;
-    transition: transform 1s ease-out;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
-#mainNavigation{
-    height: 50px;
-    
-    flex: 1;
-    display: flex;
-    justify-content: center;
+.navbar .container-fluid{
+
     background-color: rgba(219, 231, 228, 0.1);
 }
 
-#mainNavigation .navContent{
+.collapse .navbar-nav{
+    margin-right: 0;
     flex: 0.6;
-    display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
 }
 
-#mainNavigation .navContent li{
-    flex: 0.15;
-    display: flex;    
-}
-
-#mainNavigation .navContent li a{
-    flex: 1;
-    text-decoration: none;
-    font-size: x-large;
+.navbar-nav .nav-item .nav-link{
+    color: #ffcb69;
     font-family: Georgia, 'Times New Roman', Times, serif;
     letter-spacing: 0.1em;
-    color: #ffcb69;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-size: x-large;
+
 }
 
-#mainNavigation .navContent li a:hover{
+.navbar-nav .nav-item .nav-link:hover{
     color: #C0D8C0;
     background-color: rgba(219, 231, 228, 0.1);
 }
+
+@media (max-width: 767px){
+    .navbar-nav .nav-item .nav-link{
+        display: flex;
+        justify-content: center;
+    }
+}
+
 
                 /*  ABOUT SECTION COMES HERE */
 
@@ -190,6 +185,7 @@ header .mainContainer .profileContainer img{
     line-height: 32px;
     letter-spacing: 0.07em;
     justify-self: center;
+    text-align: justify;
 }
 
 
@@ -464,4 +460,134 @@ footer .bottomOne .bottomCopyright>div{
     letter-spacing: 0.06em;
     word-spacing: 0.1em;
     color: rgb(209, 209, 209);
+}
+
+                    /* Screen size less than 870px */
+
+@media (max-width: 1100px){
+    #contactForm .mainForm>div{
+        margin-right: 20px;
+    }
+    #about .aboutContent .content p{
+        letter-spacing: 0.01em;
+    }
+}
+
+@media (max-width: 870px){
+    .mainContainer .nameContainer{
+        padding-left: 30px;
+    }
+    .mainContainer .nameContainer h1{
+        font-size: 60px;
+        line-height: 1.2em;
+    }
+
+    #about{
+        flex-direction: column;
+        height: auto;
+    }
+
+    #skills{
+        flex-direction: column-reverse;
+    }
+
+    #contactForm{
+        flex-direction: column;
+    }
+
+    #about .aboutHeading p {
+        flex: 0.5;
+    }
+
+    #skills .skillsHeading h2{
+        flex: 0.5;
+    }
+
+    #contactForm .mainForm>div {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    #about .aboutContent .content{
+        flex: 0.99;
+    }
+
+    footer .bottomOne .bottomCopyright{
+        padding-left: 15px;
+        padding-right: 15px;
+    }    
+
+    footer .bottomOne{
+        height: auto;
+    }
+
+    #mainNavigation .navContent{
+        flex: 0.9;
+    }
+
+}
+
+
+@media (max-width: 515px){
+    .mainContainer .nameContainer h1{
+        font-size: 40px;
+    }
+
+    header .mainContainer .profileContainer img{
+        height: 270px;
+        width: 230px;
+        margin-right: 30px;
+    }
+
+    #skills .skillsContainer .skillsContent{
+        padding: 0;
+    }
+    #skills .skillsContainer .skillsContent .skillItem .allItem{
+        justify-content: space-around;
+    }
+
+    #contactForm .mainForm>div{
+        padding: 15px 30px;
+        width: 75%;
+    }
+
+    footer .upperOne .contactMe>div:first-child{
+        font-size: 28px;
+    }
+
+    .mainContainer{
+        flex-direction: column;
+    }
+
+    footer .upperOne .contactMe .platform {
+        width: 100%;
+    }
+
+    #contactForm .mainForm{
+        align-items: unset;
+        justify-content: unset;
+    }
+
+    #contactForm .mainForm>div{
+        border-radius: 0;
+        flex: 1;
+        width: auto;
+        padding: 15px 10px;
+    }
+    #contactForm .mainForm{
+        height: auto;
+    }
+}
+
+@media (max-width:450px){
+    header .mainContainer .profileContainer img{
+        width: 160px;
+        height: 180px;
+    }
+
+    #about .aboutContent .content p{
+        letter-spacing: 0.006em;
+        font-size: 24px;
+        line-height: 28px;
+    }
 }
