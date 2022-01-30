@@ -154,10 +154,11 @@ header .mainContainer .profileContainer img{
     margin: 20px 0;
     padding: 2.5rem 2rem;
     border-radius: 50px;
+    transition: all 2s linear;
     font-size: 80px;
     font-family: 'Balsamiq Sans', cursive;
-    background-color: #59886B;
-    color: #FFF89A;
+    background-color: #aed9e0;
+    color: #f4845f;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -271,10 +272,11 @@ header .mainContainer .profileContainer img{
     margin: 20px 0;
     padding: 2.5rem 2rem;
     border-radius: 50px;
+    transition: all 2s linear;
     font-size: 80px;
     font-family: 'Balsamiq Sans', cursive;
-    background-color: #59886B;
-    color: #FFF89A;
+    background-color: #52528c;
+    color: #f4845f;
     display: flex;
     justify-content: center;
     align-items: center;
