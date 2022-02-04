@@ -35,3 +35,14 @@ function changeShape(){
 }
 
 setInterval(changeShape, 2000);
+
+
+// Here is a code to provide an alert of nobeckend right now
+// And to prevent default of form
+
+const contactForm = document.querySelector('#contactForm');
+
+contactForm.addEventListener('submit', e => {
+    e.preventDefault();    
+    window.alert("Ohhh Oooo! I Apologise but have't added Backend Right now Hence This form does't Work.\n ):");
+});
