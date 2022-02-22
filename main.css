@@ -233,7 +233,7 @@ header .mainContainer .profileContainer img{
     display: flex;
     margin: 20px 0;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
