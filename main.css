@@ -22,30 +22,6 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
 
 /* Code for Header comes here */
 
@@ -79,10 +55,14 @@ header{
 
 .mainContainer .nameContainer h1{
     color: #98c1d9;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family:  'Pacifico', cursive;
     font-size: 80px;
     letter-spacing: 0.1em;
-    line-height: 100px;
+    line-height: 40px;
+}
+
+.mainContainer .nameContainer h1 #main-subheading{
+    font-size: 22px;
 }
 
 header .mainContainer .profileContainer img{
@@ -182,9 +162,9 @@ header .mainContainer .profileContainer img{
 
 #about .aboutContent .content p{
     font-size: 28px;
-    font-family: 'Nunito', sans-serif;
-    line-height: 32px;
-    letter-spacing: 0.07em;
+    font-family: 'Kalam', cursive;
+    line-height: 34px;
+    letter-spacing: 0.03em;
     justify-self: center;
     text-align: justify;
 }
@@ -482,13 +462,16 @@ footer .bottomOne .bottomCopyright>div{
     }
 }
 
-@media (max-width: 870px){
+@media (max-width: 923px){
     .mainContainer .nameContainer{
         padding-left: 30px;
     }
     .mainContainer .nameContainer h1{
         font-size: 60px;
-        line-height: 1.2em;
+        line-height: 1em;
+    }
+    .mainContainer .nameContainer h1 span{
+        line-height: 0.4em !important;
     }
 
     #about{
@@ -540,6 +523,7 @@ footer .bottomOne .bottomCopyright>div{
 @media (max-width: 515px){
     .mainContainer .nameContainer h1{
         font-size: 40px;
+        line-height: 0.6em;
     }
 
     header .mainContainer .profileContainer img{
